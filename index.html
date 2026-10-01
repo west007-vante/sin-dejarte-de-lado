@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<!--
+  ============================================================================
+  PÁGINA DE VENTAS — ES · "Sin dejarte de lado" · 12,00 USD
+  Texto: material/APROVADO-copy-es.html (copy aprobada; aquí solo recortada y re-jerarquizada).
+  Orden de los 11 bloques: material/FUNIL-WORKBOOK-V3.md §4.
+
+  >>> PARA LIGAR EL CHECKOUT: cambiar 2 ocurrencias, y solo 2 <<<
+  El marcador del checkout (STRIPE_LINK_FRONT + _AQUI, todo junto) aparece 2 veces en este
+  archivo, solo en el atributo href de:
+      - <a id="comprar-precio">  (bloque 8)
+      - <a id="comprar-final">   (bloque 11)
+  Reemplázalo por la URL real del checkout.
+  MIENTRAS NO SE CAMBIE: site.js pone aria-disabled en los dos botones, el aviso
+  "Falta pegar el enlace de pago" queda visible desde la carga y el clic se intercepta.
+  EL BOTÓN NO FINGE QUE FUNCIONA. Con el enlace real, site.js retira el aviso solo.
+
+  PÍXEL: solo PageView. Ningún otro fbq('track'). Ganchos de telemetría: ../GANCHOS.md
+  NO TIENE, a propósito: cronómetro, pop-up, 3D, testimonio, garantía condicional, quiz, precio oculto.
+  ============================================================================
+-->
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sin dejarte de lado — cuaderno de 14 módulos</title>
+<meta name="description" content="Cuaderno llenable en PDF, 14 módulos, para anotar las situaciones en que dijiste que sí queriendo decir que no y dejar escrita una respuesta posible. 12,00 USD.">
+<meta name="robots" content="noindex">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23FBF7EF'/%3E%3Cpath d='M6 21c6-3 13 2 20-2' fill='none' stroke='%231B3F8B' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="alternate" hreflang="en" href="index-en.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;600;700&family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="site.css">
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1634596161623080');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1634596161623080&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+</head>
+<body>
+<a class="pular" href="#contenido">Saltar al contenido</a>
+<div class="margen" aria-hidden="true"><i></i></div>
+
+<main id="contenido">
+
+<!-- ================= 1 · PRIMERA DOBLA ================= -->
+<!-- fonte: APROVADO-copy-es.html bloco 1 (rótulo, h1, sub, botão 1º estágio, nota, declaração de lançamento) + nome do produto do rodapé -->
+<section class="dobra" id="dobra">
+  <p class="cabecera"><span class="marca">Sin dejarte de lado</span> <span>Cuaderno llenable · 14 módulos</span></p>
+
+  <h1 class="frase" id="frase-ancla"><span class="ln"><span>Lo que no alcanzaste a decir,</span></span> <span class="ln"><span><em class="pluma">escríbelo aquí.<svg viewBox="0 0 300 12" preserveAspectRatio="none" aria-hidden="true"><path pathLength="1" d="M3 8C40 3 74 11 118 6S196 3 236 7S282 5 297 4"/></svg></em></span></span></h1>
+
+  <p class="sub">Un cuaderno de 14 módulos para anotar las veces que dijiste que sí queriendo decir que no, y dejar escrita una respuesta posible antes de necesitarla. <strong>12,00&nbsp;USD</strong>, pago único. Sin suscripción ni cobros después. Si tu país aplica impuesto, el checkout te lo muestra antes de pagar.</p>
+
+  <div class="accion">
+    <a class="btn-ver" id="ver-paginas" href="#paginas">Ver las páginas por dentro
+      <svg width="14" height="16" viewBox="0 0 14 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M7 1v13M1.5 8.5 7 14l5.5-5.5"/></svg></a>
+    <p class="btn-nota">Primero miras el material. El pago está más abajo.</p>
+  </div>
+
+  <figure class="capa">
+    <div class="capa-hoja"><img src="assets/es-capa.webp" width="376" height="565" loading="lazy" alt="Portada del cuaderno Sin dejarte de lado."></div>
+  </figure>
+
+  <p class="lanz">Es un lanzamiento inicial: todavía no tengo testimonios que mostrarte. Por eso la página enseña las páginas reales del cuaderno y no la opinión de nadie.</p>
+</section>
+
+<!-- ================= 2 · QUÉ ES ESTO, EN 3 LÍNEAS ================= -->
+<!-- fonte: APROVADO-copy-es.html bloco 2 -->
+<section class="bloque" id="que-es">
+  <p class="nota-margen"><b>02</b> Qué es esto</p>
+  <div class="cuerpo lineas">
+    <p data-palabras>Es un <strong>PDF llenable</strong> de 14 módulos: lo abres en el celular y escribes en los campos, o lo imprimes y lo llenas a mano.</p>
+    <p data-palabras>Cada módulo tiene para qué sirve, un ejemplo ficticio, el ejercicio con renglones y unas preguntas al final.</p>
+    <p data-palabras>No es terapia, no hace diagnóstico y no te dice qué contestar: te da el espacio para decidirlo tú, antes de que te lo pregunten.</p>
+  </div>
+</section>
+
+<!-- ================= 3 · CARRUSEL DE 3 PÁGINAS REALES ================= -->
+<!-- fonte: APROVADO-copy-es.html bloco 3 · imagens: material/paginas/es-p1/p2/p3.webp (capturas do PDF digital) -->
+<section class="bloque paginas" id="paginas">
+  <div class="paginas-texto">
+    <p class="nota-margen"><b>03</b> Tres páginas reales</p>
+    <div class="cuerpo">
+      <h2 class="titulo">Así se ve el cuaderno por dentro.</h2>
+      <p class="peq">Son capturas del archivo que recibes, sin retoque. Desliza de lado.</p>
+    </div>
+  </div>
+
+  <div class="visor slider" id="carro" tabindex="0" role="group" aria-label="Tres páginas reales del cuaderno">
+    <div class="tira">
+      <figure class="hoja es-actual" aria-current="true">
+        <div class="hoja-papel"><img data-src="assets/es-p1.webp" width="532" height="796" loading="lazy" alt="Página de contenido: los 14 módulos con su número y su etapa."><noscript><img src="assets/es-p1.webp" width="532" height="796" alt="Página de contenido: los 14 módulos con su número y su etapa."></noscript></div>
+        <figcaption>El contenido: los 14 módulos y su etapa.</figcaption>
+      </figure>
+      <figure class="hoja" aria-current="false">
+        <div class="hoja-papel"><img data-src="assets/es-p2.webp" width="532" height="796" loading="lazy" alt="Página del ejercicio del módulo 07, con los renglones para escribir y la tabla del filtro de seguridad."><noscript><img src="assets/es-p2.webp" width="532" height="796" alt="Página del ejercicio del módulo 07, con los renglones para escribir y la tabla del filtro de seguridad."></noscript></div>
+        <figcaption>Módulo 07, el ejercicio — con su filtro de seguridad.</figcaption>
+      </figure>
+      <figure class="hoja" aria-current="false">
+        <div class="hoja-papel"><img data-src="assets/es-p3.webp" width="532" height="796" loading="lazy" alt="Página de las tres tarjetas de consulta rápida para recortar."><noscript><img src="assets/es-p3.webp" width="532" height="796" alt="Página de las tres tarjetas de consulta rápida para recortar."></noscript></div>
+        <figcaption>Las tres tarjetas de consulta rápida, para recortar.</figcaption>
+      </figure>
+    </div>
+  </div>
+
+  <div class="hoja-mando">
+    <button type="button" class="seta" id="ant" data-farol="carrossel" aria-controls="carro"><svg width="16" height="12" viewBox="0 0 16 12" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M15 6H1.5M6 1 1 6l5 5"/></svg>Anterior</button>
+    <button type="button" class="seta" id="sig" data-farol="carrossel" aria-controls="carro">Siguiente<svg width="16" height="12" viewBox="0 0 16 12" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M1 6h13.5M10 1l5 5-5 5"/></svg></button>
+    <span class="cuenta" id="cuenta" data-plantilla="{n} de {t}" aria-live="polite">1 de 3</span>
+  </div>
+</section>
+
+<!-- ================= 4 · EL ÍNDICE DE LOS 14 MÓDULOS ================= -->
+<!-- fonte: APROVADO-copy-es.html bloco 4 (nomes = sumário do PDF; módulo 04 com o nome do PDF) -->
+<section class="bloque" id="indice">
+  <p class="nota-margen"><b>04</b> El índice completo</p>
+  <div class="cuerpo indice-dos">
+    <div class="indice-fijo">
+      <h2 class="titulo">Los 14 módulos, con nombre y apellido.</h2>
+      <p class="peq">Van en orden, pero el orden es una sugerencia. Ningún módulo depende de haber hecho el anterior.</p>
+    </div>
+    <div>
+      <ol class="modulos">
+        <li class="modulo" data-etapa="apertura"><span class="modulo-n">01</span><span class="modulo-t">Cómo usar este cuaderno</span><span class="modulo-e">apertura</span><i class="raya"></i></li>
+        <li class="modulo" data-etapa="reconocer"><span class="modulo-n">02</span><span class="modulo-t">Mi mapa de situaciones</span><span class="modulo-e">reconocer</span><i class="raya"></i></li>
+        <li class="modulo" data-etapa="reconocer"><span class="modulo-n">03</span><span class="modulo-t">El sí que sale solo</span><span class="modulo-e">reconocer</span><i class="raya"></i></li>
+        <li class="modulo" data-etapa="diferenciar"><span class="modulo-n">04</span><span class="modulo-t">Hecho, interpretación, reacción y límite posible</span><span class="modulo-e">diferenciar</span><i class="raya"></i></li>
+        <li class="modulo" data-etapa="observar"><span class="modulo-n">05</span><span class="modulo-t">Lo que avisa mi cuerpo</span><span class="modulo-e">observar</span><i class="raya"></i></li>
+        <li class="modulo" data-etapa="observar"><span class="modulo-n">06</span><span class="modulo-t">Lo que pido y lo que me callo</span><span class="modulo-e">observar</span><i class="raya"></i></li>
+        <li class="modulo" data-etapa="experimentar"><span class="modulo-n">07</span><span class="modulo-t">Un límite pequeño</span><span class="modulo-e">experimentar</span><i class="raya"></i></li>
+        <li class="modulo" data-etapa="experimentar"><span class="modulo-n">08</span><span class="modulo-t">La pausa antes de responder</span><span class="modulo-e">experimentar</span><i class="raya"></i></li>
+        <li class="modulo" data-etapa="comunicar"><span class="modulo-n">09</span><span class="modulo-t">Frases mías para decir no</span><span class="modulo-e">comunicar</span><i class="raya"></i></li>
+        <li class="modulo" data-etapa="comunicar"><span class="modulo-n">10</span><span class="modulo-t">Pedir sin explicarme de más</span><span class="modulo-e">comunicar</span><i class="raya"></i></li>
+        <li class="modulo" data-etapa="comunicar"><span class="modulo-n">11</span><span class="modulo-t">Después de una crítica</span><span class="modulo-e">comunicar</span><i class="raya"></i></li>
+        <li class="modulo" data-etapa="sostener"><span class="modulo-n">12</span><span class="modulo-t">El silencio después del no</span><span class="modulo-e">sostener</span><i class="raya"></i></li>
+        <li class="modulo" data-etapa="sostener"><span class="modulo-n">13</span><span class="modulo-t">Cuando el patrón regresa</span><span class="modulo-e">sostener</span><i class="raya"></i></li>
+        <li class="modulo" data-etapa="sostener"><span class="modulo-n">14</span><span class="modulo-t">Mi plan de práctica</span><span class="modulo-e">sostener</span><i class="raya"></i></li>
+      </ol>
+      <p class="peq">Al final, un anexo con tres tarjetas de consulta rápida para recortar.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 5 · PARA QUIÉN ES Y PARA QUIÉN NO ================= -->
+<!-- fonte: APROVADO-copy-es.html bloco 5 -->
+<section class="bloque" id="para-quien">
+  <p class="nota-margen"><b>05</b> Para quién</p>
+  <div class="cuerpo">
+    <h2 class="titulo">Mejor decirlo antes de que pagues.</h2>
+    <div class="dos">
+      <i class="dos-linea" aria-hidden="true"></i>
+      <div>
+        <h3>Es para quien…</h3>
+        <ul class="guiones">
+          <li>acepta de más por no incomodar a nadie;</li>
+          <li>escribe a mano o en pantalla y le acomoda ordenar sus cosas por escrito;</li>
+          <li>quiere llevar pensada una respuesta corta para la próxima vez;</li>
+          <li>prefiere hacerlo solo, a su ritmo, sin contarle su historia a nadie.</li>
+        </ul>
+      </div>
+      <div>
+        <h3>No es para quien…</h3>
+        <ul class="guiones">
+          <li>busca terapia, diagnóstico o acompañamiento profesional — esto no lo sustituye;</li>
+          <li>espera un resultado garantizado o una fecha: aquí no hay plazo prometido;</li>
+          <li>no quiere escribir nada (todo el cuaderno es escribir);</li>
+          <li>está en una situación con violencia, amenazas o miedo de alguien: eso merece apoyo de una persona preparada, no un cuaderno.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 6 · CÓMO FUNCIONA — LAS CUATRO COLUMNAS ================= -->
+<!-- fonte: APROVADO-copy-es.html bloco 6 · grafia das 4 colunas = decisão do dono (BRIEFING §4) -->
+<section class="bloque" id="formato">
+  <p class="nota-margen"><b>06</b> Cómo funciona</p>
+  <div class="cuerpo">
+    <div class="formato-pin">
+      <h2 class="titulo">Cuatro columnas, tu letra.</h2>
+      <p class="formato-p">El formato del cuaderno es este: cada caso tuyo entra en cuatro columnas, y la cuarta se escribe <strong>antes</strong> de que vuelvas a necesitarla.</p>
+      <div class="cuadro" id="cols">
+        <div class="col"><p class="col-t">situación</p><div class="renglones" aria-hidden="true"><div class="renglon"></div><div class="renglon"></div><div class="renglon"></div><div class="renglon"></div></div></div>
+        <div class="col"><p class="col-t">pensamiento</p><div class="renglones" aria-hidden="true"><div class="renglon"></div><div class="renglon"></div><div class="renglon"></div><div class="renglon"></div></div></div>
+        <div class="col"><p class="col-t">respuesta</p><div class="renglones" aria-hidden="true"><div class="renglon"></div><div class="renglon"></div><div class="renglon"></div><div class="renglon"></div></div></div>
+        <div class="col"><p class="col-t">límite posible</p><div class="renglones" aria-hidden="true"><div class="renglon"></div><div class="renglon"></div><div class="renglon"></div><div class="renglon"></div></div></div>
+      </div>
+    </div>
+    <div class="formato-fin">
+      <p class="peq">situación · pensamiento · respuesta · límite posible</p>
+      <p>Nadie lee lo que escribes más que tú. Ninguna pregunta es obligatoria, y el cuaderno te lo dice por dentro: puedes saltarte la que no quieras contestar.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 7 · LO QUE RECIBES Y LO QUE NO ================= -->
+<!-- fonte: APROVADO-copy-es.html bloco 7 -->
+<section class="bloque" id="recibes">
+  <p class="nota-margen"><b>07</b> Lo que recibes</p>
+  <div class="cuerpo">
+    <h2 class="titulo">Lo que entra en el archivo.</h2>
+    <div class="recibes-dos">
+      <ul class="recibes">
+        <li class="recibe"><p><strong>14 módulos</strong> llenables, cada uno con para qué sirve, un ejemplo ficticio marcado como tal, el ejercicio y las preguntas del final.</p><i class="raya"></i></li>
+        <li class="recibe"><p><strong>Versión digital llenable</strong> (escribes en pantalla y guardas tu copia) <strong>y versión para imprimir</strong> en Carta o A4.</p><i class="raya"></i></li>
+        <li class="recibe"><p><strong>Tres tarjetas de consulta rápida</strong> para recortar: antes de responder, antes de decir sí, y después de una crítica.</p><i class="raya"></i></li>
+        <li class="recibe"><p>El aviso, módulo por módulo, de que puedes saltarte cualquier pregunta, y la nota de cuándo conviene buscar apoyo profesional.</p><i class="raya"></i></li>
+      </ul>
+      <div class="no-recibes">
+        <p class="lista-t">Lo que NO recibes</p>
+        <ul class="guiones">
+          <li>Comunidad, grupo, sesiones ni asesoría personalizada.</li>
+          <li>Seguimiento, correcciones ni respuesta a tus ejercicios: nadie los lee.</li>
+          <li>Diagnóstico, terapia ni indicación clínica.</li>
+          <li>Promesa de resultado o de plazo.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 8 · PRECIO Y CONDICIONES ================= -->
+<!-- fonte: APROVADO-copy-es.html bloco 8 -->
+<section class="bloque" id="precio" data-farol="preco">
+  <p class="nota-margen"><b>08</b> Precio y condiciones</p>
+  <div class="cuerpo">
+    <p class="precio-cifra"><span>12,00 <small>USD</small></span></p>
+    <p class="precio-l">Pago único de 12,00 USD: no hay suscripción, ni cobros mensuales, ni un segundo cobro escondido. El cobro lo procesa una plataforma de pago externa, que cobra en la moneda de tu país y <strong>añade el impuesto local cuando corresponde</strong> — lo verás en la pantalla de pago antes de confirmar.</p>
+    <ul class="condiciones">
+      <li>Acceso inmediato: terminas el pago y la página siguiente trae el botón de descarga.</li>
+      <li>El archivo es tuyo; lo guardas en tu dispositivo y no caduca.</li>
+      <li><strong>Devolución sin preguntas, 30 días</strong> — y te quedas con el archivo.</li>
+    </ul>
+    <a class="btn-comprar" id="comprar-precio" data-farol="comprar" href="https://pay.hotmart.com/P107844457C?checkoutMode=10">Comprar el cuaderno — 12,00 USD</a>
+    <p class="aviso" id="aviso-precio">Falta pegar el enlace de pago. El botón está deshabilitado a propósito: todavía no existe checkout.</p>
+    <p class="btn-nota">¿Dudas antes de pagar? <a class="en-linea" href="mailto:vendawest007@gmail.com">vendawest007@gmail.com</a></p>
+  </div>
+</section>
+
+<!-- ================= 9 · POLÍTICA REAL ================= -->
+<!-- fonte: APROVADO-copy-es.html bloco 9 -->
+<section class="bloque" id="politica">
+  <p class="nota-margen"><b>09</b> Política</p>
+  <div class="cuerpo">
+    <h2 class="titulo">Devolución y soporte, tal cual.</h2>
+    <div class="politica-dos">
+      <p><strong>Devolución sin preguntas, 30 días.</strong> Escribes a <a class="en-linea" href="mailto:vendawest007@gmail.com">vendawest007@gmail.com</a> y te devolvemos los 12,00 USD. No tienes que explicar por qué, no tienes que haber llenado nada, y <strong>te quedas con el archivo</strong>. No hay condición ni letra chica.</p>
+      <p><strong>Soporte.</strong> Mismo correo. Atiende una persona, no un robot, y puede tardar. Si el archivo no te llega o no te abre, escribe y lo resolvemos.</p>
+    </div>
+    <p class="legal">Este es material educativo de autoexploración. No es terapia ni tratamiento y no es un diagnóstico. Si al escribir aparece miedo de alguien, violencia o un malestar que no baja, conviene buscar apoyo profesional o el servicio de atención de tu país.</p>
+  </div>
+</section>
+
+<!-- ================= 10 · FAQ — 5 PREGUNTAS ================= -->
+<!-- fonte: APROVADO-copy-es.html bloco 10 -->
+<section class="bloque" id="faq">
+  <p class="nota-margen"><b>10</b> Preguntas frecuentes</p>
+  <div class="cuerpo">
+    <h2 class="titulo">Cinco preguntas, con respuesta.</h2>
+    <div class="preguntas">
+      <details class="faq"><summary>¿Esto es terapia o un tratamiento?<span class="mas" aria-hidden="true"></span></summary>
+        <div class="faq-r"><p>No. Es un cuaderno de ejercicios para escribir y ordenar tus propios casos. No hace diagnóstico, no sustituye a un profesional y no promete resolver nada por sí solo. Si lo que traes te está pesando mucho, busca apoyo profesional; el cuaderno lo dice también por dentro.</p></div></details>
+
+      <details class="faq"><summary>¿Tengo que escribir sobre mi familia o contarle mi historia a alguien?<span class="mas" aria-hidden="true"></span></summary>
+        <div class="faq-r"><p>No. Nadie lee tus respuestas más que tú. Ninguna pregunta es obligatoria y el cuaderno te indica que puedes saltarte cualquiera. No se te pide subir ni enviar nada, y esta página no te pregunta nada antes de comprar.</p></div></details>
+
+      <details class="faq"><summary>¿Cómo lo recibo y en qué formato?<span class="mas" aria-hidden="true"></span></summary>
+        <div class="faq-r"><p>Es un PDF llenable, con una versión para imprimir. Al terminar el pago llegas a una página con el botón de descarga, y el archivo queda en tu dispositivo. Lo puedes llenar desde el celular, en la computadora o en papel.</p></div></details>
+
+      <details class="faq"><summary>¿Cuánto tiempo me toma?<span class="mas" aria-hidden="true"></span></summary>
+        <div class="faq-r"><p>Los 14 módulos están pensados para llenarse por partes, a tu ritmo, sin fecha. El último te pide una acción pequeña para la semana siguiente y un espacio para anotar qué pasó. No hay plazo prometido, porque eso dependería de cada persona y no lo podemos medir por ti.</p></div></details>
+
+      <details class="faq"><summary>¿Y si no me sirve?<span class="mas" aria-hidden="true"></span></summary>
+        <div class="faq-r"><p>Devolución sin preguntas durante 30 días: escribes a <a class="en-linea" href="mailto:vendawest007@gmail.com">vendawest007@gmail.com</a>, te devolvemos los 12,00 USD y te quedas con el archivo. Y antes de comprar ya viste tres páginas reales aquí arriba, para que decidas viendo el material y no la descripción.</p></div></details>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 11 · CTA FINAL — LA MISMA FRASE DE LA DOBLA, PALABRA POR PALABRA ================= -->
+<!-- fonte: APROVADO-copy-es.html bloco 11 -->
+<section class="cierre" id="cierre">
+  <h2 class="frase"><span class="ln"><span>Lo que no alcanzaste a decir,</span></span> <span class="ln"><span><em class="pluma">escríbelo aquí.<svg viewBox="0 0 300 12" preserveAspectRatio="none" aria-hidden="true"><path d="M3 8C40 3 74 11 118 6S196 3 236 7S282 5 297 4"/></svg></em></span></span></h2>
+  <p class="sub cierre-sub">Cuaderno llenable en PDF, 14 módulos, versión para imprimir incluida. <strong>12,00 USD</strong>, pago único (más el impuesto de tu país, si aplica). Devolución sin preguntas, 30 días.</p>
+  <a class="btn-comprar" id="comprar-final" data-farol="comprar" href="https://pay.hotmart.com/P107844457C?checkoutMode=10">Comprar el cuaderno — 12,00 USD</a>
+  <p class="aviso" id="aviso-final">Falta pegar el enlace de pago. El botón está deshabilitado a propósito: todavía no existe checkout.</p>
+  <p class="btn-nota">Si no es para ti ahora, está bien. <a class="en-linea" href="#paginas">Vuelve a ver las páginas</a> cuando quieras.</p>
+</section>
+
+</main>
+
+<!-- ================= PIE — una línea ================= -->
+<!-- fonte: APROVADO-copy-es.html rodapé (Privacidad e Términos com o texto real dentro da página) -->
+<footer class="pie">
+  <p><strong>Sin dejarte de lado</strong> — cuaderno de trabajo, 14 módulos. Lanzamiento inicial, sin testimonios.</p>
+
+  <details><summary>Privacidad</summary>
+    <div class="txt">
+      <p>Esta página no tiene formulario y no te pide ningún dato para verla. Lo que escribes en el cuaderno se queda en tu dispositivo: no se sube, no se envía y nadie lo lee.</p>
+      <p>Usamos el píxel de Meta solo para contar visitas de la página (evento <em>PageView</em>). Nunca se envía ninguna respuesta de ejercicio, historia de salud ni información de familia — ni en el nombre del evento ni en ningún parámetro. Los datos del pago los trata una plataforma de pago externa, no nosotros; no guardamos tu tarjeta.</p>
+    </div></details>
+
+  <details><summary>Términos</summary>
+    <div class="txt">
+      <p>Compras un archivo digital (PDF) para uso personal. No se puede revender, redistribuir ni publicar. El precio es 12,00 USD, pago único. La plataforma de pago cobra en la moneda de tu país y puede añadir el impuesto local; el monto final aparece en el checkout antes de confirmar.</p>
+      <p>Devolución sin preguntas durante 30 días desde la compra, escribiendo al correo de abajo; te devolvemos el importe y te quedas con el archivo.</p>
+      <p>Material educativo de autoexploración. No es terapia, no es tratamiento, no es diagnóstico y no promete ningún resultado ni plazo.</p>
+    </div></details>
+
+  <p>Contacto y soporte: <a class="en-linea" href="mailto:vendawest007@gmail.com">vendawest007@gmail.com</a></p>
+  <p><a class="en-linea" href="index-en.html" hreflang="en" lang="en">English version</a></p>
+</footer>
+
+<script>
+/* PES-01: las páginas del carrusel, Lenis, GSAP, ScrollTrigger y site.js entran DESPUÉS de la primera pintura, en orden. */
+(function(){
+  var u=["https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js",
+         "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js",
+         "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js",
+         "farol.js",
+         "site.js"];
+  function carga(){
+    document.querySelectorAll("img[data-src]").forEach(function(i){i.src=i.getAttribute("data-src");});
+    u.forEach(function(s){var e=document.createElement("script");e.src=s;e.async=false;document.body.appendChild(e);});}
+  var hecho=false;
+  function una(){if(hecho)return;hecho=true;carga();}
+  try{new PerformanceObserver(function(l){
+    if(l.getEntriesByName("first-contentful-paint").length)setTimeout(una,80);
+  }).observe({type:"paint",buffered:true});}catch(e){}
+  setTimeout(una,1200);   /* red de seguridad: pestaña en segundo plano o navegador sin PerformanceObserver */
+})();
+</script>
+</body>
+</html>

@@ -71,6 +71,19 @@
     return FIXO;
   }
 
+
+  // MEDIDO 02/10/2026: `mandar()` usava MAPA[ev] na linha 1, mas MAPA nunca foi
+  // declarado -> ReferenceError em TODA chamada, antes do fetch. Zero evento real
+  // desde que a pagina subiu. A tabela abaixo e a que o cabecalho deste arquivo ja
+  // documentava; faltava existir em codigo.
+  var MAPA = {
+    scroll_25: "rolou_25", scroll_50: "rolou_50",
+    scroll_75: "rolou_75", scroll_100: "rolou_100",
+    carrusel: "carrossel",
+    clic_ver_paginas: "ver_paginas",
+    clic_comprar: "comprar",
+    gracias: "obrigado"
+  };
   var ja = {};
   // Assinatura do contrato: farol(evento, extra). `extra` é descartado de propósito.
   function mandar(ev, _extra) {

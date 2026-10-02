@@ -325,6 +325,10 @@ src="https://www.facebook.com/tr?id=1634596161623080&ev=PageView&noscript=1"
   <p><a class="en-linea" href="index-en.html" hreflang="en" lang="en">English version</a></p>
 </footer>
 
+<script>/* farol: endpoint + chave publicavel (anon do Supabase, publica por desenho — ela ja aparece no HTML de qualquer site que use Supabase no navegador). MEDIDO 02/10/2026: sem estas duas linhas o farol fazia fetch("") e falhava calado — wb.evento ficou com 0 evento real desde que a pagina subiu. */
+window.WB_FAROL_URL="https://rlrxeegnwjsmxwzoytiz.supabase.co/functions/v1/wb-farol";
+window.WB_FAROL_ANON="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJscnhlZWdud2pzbXh3em95dGl6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzQzOTcxMDEsImV4cCI6MjA4OTk3MzEwMX0.jWsEO2sx5Iu5NxIQt5TXPCKzqsBqRngVcE5aBVFxWgw";
+</script>
 <script>
 /* PES-01: las páginas del carrusel, Lenis, GSAP, ScrollTrigger y site.js entran DESPUÉS de la primera pintura, en orden. */
 (function(){
